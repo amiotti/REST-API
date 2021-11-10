@@ -14,10 +14,6 @@ app.use(cors()); // to avoid CORS problems and fetch
 //ROUTES
 app.use("/posts", postRoute);
 
-// app.get("/posts", (req, res) => {
-//   res.send("We are on posts ");
-// });
-
 //CONNECT TO DB
 
 mongoose.connect(process.env.DB_CONNECTION, () => {
